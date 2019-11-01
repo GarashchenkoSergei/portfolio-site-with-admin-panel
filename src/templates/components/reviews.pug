@@ -1,0 +1,68 @@
+script(type="text/x-template")#reviews-container
+  .feedback-slider
+    .feedback-slider__controls
+      button.feedback__btn.feedback__btn-prev(type='button' @click="previous()")
+        +icon('arrow-down', 'feedback-prev')
+      button.feedback__btn.feedback__btn-next(type='button' @click="next()")
+        +icon('arrow-down', 'feedback-next')
+    flickity.feedback-slider__list(ref="flickity" :options="flickityOptions")
+      .feedback-slider__item
+        .feedback-slider__item-content
+          .item-quote
+            +icon('quote', 'quote')
+          .item-text
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae, adipisci cumque et optio, molestiae quam nisi odio doloremque inventore eum. Laboriosam animi aperiam assumenda cumque dicta hic aspernatur alias.
+          .item-person
+            .item-person__picture 
+              +image('content/kovald.png', 'item-picture__pic')
+            .item-person__info
+              .item-person__info-name {{flickityOptions.groupCells}}
+              .item-person__info-position Основатель
+      .feedback-slider__item
+        .feedback-slider__item-content
+          .item-quote
+            +icon('quote', 'quote')
+          .item-text
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae, adipisci cumque et optio, molestiae quam nisi odio doloremque inventore eum. Laboriosam animi aperiam assumenda cumque dicta hic aspernatur alias.
+          .item-person
+            .item-person__picture 
+              +image('content/kovald.png', 'item-picture__pic')
+            .item-person__info
+              .item-person__info-name {{flickityOptions.groupCells}}
+              .item-person__info-position Основатель
+      .feedback-slider__item
+        .feedback-slider__item-content
+          .item-quote
+            +icon('quote', 'quote')
+          .item-text
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae, adipisci cumque et optio, molestiae quam nisi odio doloremque inventore eum. Laboriosam animi aperiam assumenda cumque dicta hic aspernatur alias.
+          .item-person
+            .item-person__picture 
+              +image('content/kovald.png', 'item-picture__pic')
+            .item-person__info
+              .item-person__info-name {{flickityOptions.groupCells}}
+              .item-person__info-position Основатель
+      .feedback-slider__item
+        .feedback-slider__item-content
+          .item-quote
+            +icon('quote', 'quote')
+          .item-text
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae, adipisci cumque et optio, molestiae quam nisi odio doloremque inventore eum. Laboriosam animi aperiam assumenda cumque dicta hic aspernatur alias.
+          .item-person
+            .item-person__picture 
+              +image('content/kovald.png', 'item-picture__pic')
+            .item-person__info
+              .item-person__info-name {{flickityOptions.groupCells}}
+              .item-person__info-position Основатель
+      .feedback-slider__item
+        .feedback-slider__item-content
+          .item-quote
+            +icon('quote', 'quote')
+          .item-text
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae, adipisci cumque et optio, molestiae quam nisi odio doloremque inventore eum. Laboriosam animi aperiam assumenda cumque dicta hic aspernatur alias.
+          .item-person
+            .item-person__picture 
+              +image('content/kovald.png', 'item-picture__pic')
+            .item-person__info
+              .item-person__info-name {{flickityOptions.groupCells}}
+              .item-person__info-position Основатель

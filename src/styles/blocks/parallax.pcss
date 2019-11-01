@@ -1,0 +1,172 @@
+.parallax-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: $black;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translateX(-50%); */
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+
+  &:nth-child(1) {
+    .parallax__image {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  /* mountains */
+  &:nth-child(2) {
+    .parallax__image {
+      top: 250px;
+      width: 100%;
+
+      @include tablets {
+        top: 250px;
+      }
+
+      @include tabletsVert {
+        top: 300px;
+      }
+
+      @include phones {
+        top: 260px;
+      }
+    }
+  }
+
+  /* train */
+  &:nth-child(3) {
+    .parallax__image {
+      top: 400px;
+      width: 100%;
+
+      @include desktop {
+        top: 330px;
+      }
+
+      @include tablets {
+        top: 250px;
+      }
+
+      @include tabletsVert {
+        top: 410px;
+      }
+
+      @include phones {
+        top: 330px;
+        right: 350px;
+      }
+
+      @include smallphones {
+        top: 250px;
+        right: 400px;
+      }
+    }
+  }
+
+  /* front grass */
+  &:nth-child(4) {
+    .parallax__image {
+      bottom: -500px;
+      width: 100%;
+
+      @include ipadpro {
+        bottom: -300px;
+      }
+
+      @include desktop {
+        bottom: -350px;
+      }
+      
+      @include tablets {
+        bottom: -200px;
+      }
+
+      @include tabletsVert {
+        bottom: -50px;
+      }
+
+      @include phones {
+        bottom: -200px;
+      }
+
+      @include smallphones {
+        bottom: -350px;
+      }
+    }
+  }
+
+  /* darkners */
+  &:nth-child(5) {
+    .parallax__image {
+      bottom: -500px;
+      width: 100%;
+
+      @include ipadpro {
+        bottom: -300px;
+      }
+
+      @include tablets {
+        bottom: -200px;
+      }
+
+      @include tabletsVert {
+        bottom: -100px;
+      }
+
+      @include phones {
+        bottom: -200px;
+      }
+      
+      @include smallphones {
+        bottom: -350px;
+      }
+    }
+  }
+
+  &:nth-child(6) {
+    .parallax__image {
+      bottom: -500px;
+      width: 100%;
+
+      @include ipadpro {
+        bottom: -300px;
+      }
+    
+      @include tablets {
+        bottom: -160px;
+      }
+
+      @include tabletsVert {
+        bottom: -50px;
+      }
+
+      @include phones {
+        bottom: -200px;
+      }
+      
+      @include smallphones {
+        bottom: -350px;
+      }
+    }
+  }
+}
+
+.parallax__image {
+  position: absolute;
+}

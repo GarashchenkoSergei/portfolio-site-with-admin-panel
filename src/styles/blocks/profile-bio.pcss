@@ -1,0 +1,43 @@
+.profile-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+
+  @include bigphones {
+    width: 340px;
+    margin-top: 45px;
+  }
+}
+
+.bio-info__name {
+  color: $white;
+  margin-top: 20px;
+}
+
+.bio-info__desc {
+  margin-top: 30px;
+}
+
+.bio-site {
+  font-style: italic;
+  font-weight: normal;
+  position: relative;
+
+  @include bigphones {
+    margin-top: 45px;
+  }
+
+  &::before {
+    content: "*";
+    font-size: 36px;
+    color: #331d1f;
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    line-height: 1;
+  }
+}

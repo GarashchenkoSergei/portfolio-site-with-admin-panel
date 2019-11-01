@@ -1,0 +1,25 @@
+footer.footer
+  .container
+    .footer-content
+      .footer-owner
+        .footer-owner__year &copy; 2019
+        .footer-owner__desc
+          .footer-owner__desc-name
+            |Sergei 
+            br
+            |Garashchenko
+          .footer-owner__desc-info
+            |Web developer 
+            br
+            |personal site
+      .footer-information
+        include nav
+        +nav('footer')
+        .footer-information__block
+          .footer-information__column
+            p.information__column-text This site was created during my learning at LoftSchool - school of online education.
+            include socials
+            +socials('footer')
+          .footer-information__column.footer-information__column_mod
+            p.information__column-text Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+            span.information__right-name Martin Golding

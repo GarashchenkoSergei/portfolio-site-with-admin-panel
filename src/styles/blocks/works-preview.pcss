@@ -1,0 +1,75 @@
+.works-preview__pic {
+  width: 565px;
+  height: 355px;
+  position: relative;
+
+  @include tablets {
+    width: 90%;
+    height: auto;
+  }
+
+  @include phones {
+    width: 100%;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "2";
+    display: block;
+    font-size: 300px;
+    font-weight: 900;
+    opacity: .1;
+    color: $grey;
+    position: absolute;
+    top: 0;
+    right: -130px;
+    line-height: 0.7;
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.works-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: $grey;
+  border: none;
+
+  @include phones {
+    z-index: 1;
+  }
+
+  &_next {
+    right: -50px;
+    bottom: 75px;
+
+    @include phones {
+      right: 0;
+    }
+  }
+
+  &_prev {
+    right: -50px;
+    bottom: 25px;
+
+    @include phones {
+      right: 0;
+      bottom: 26px;
+    }
+  }
+}
+
+.arrow-next {
+  width: 12px;
+  fill: $white;
+}
+
+.arrow-prev {
+  width: 12px;
+  fill: $white;
+  opacity: .4;
+  transform: rotate(180deg);
+}

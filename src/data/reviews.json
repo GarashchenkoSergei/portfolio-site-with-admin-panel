@@ -1,0 +1,16 @@
+[
+  {
+    "text": "This guy passed classes not just somewhere, but in LoftSchool! 2 months of the hardest tests and sleepless nights!",
+    "picture": "content/kovald.png",
+    "name": "Dmitriy Kovalchuk",
+    "position": "LoftSchool founder",
+    "active": true
+  },
+  {
+    "text": "This code will handle any test. But please, don't run it in very old browsers",
+    "picture": "content/sabanv.png",
+    "name": "Vladimir Sabancev",
+    "position": "Teacher",
+    "active": false
+  }
+]

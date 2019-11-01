@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "1 Online education school site",
+    "skills": "1 HTML, CSS, JavaScript",
+    "photo": "slider1.jpg",
+    "link": "//google.com",
+    "desc": "1 This guy passed classes not just somewhere, but in LoftSchool! 2 months of the hardest tests and sleepless nights!"
+  },
+  {
+    "id": 2,
+    "title": "2 Online education school site",
+    "skills": "2 HTML, CSS, JavaScript",
+    "photo": "slider2.jpg",
+    "link": "//google.com",
+    "desc": "2 This guy passed classes not just somewhere, but in LoftSchool! 2 months of the hardest tests and sleepless nights!"
+  },
+  {
+    "id": 3,
+    "title": "3 Online education school site",
+    "skills": "3 HTML, CSS, JavaScript",
+    "photo": "slider3.jpg",
+    "link": "//google.com",
+    "desc": "3 This guy passed classes not just somewhere, but in LoftSchool! 2 months of the hardest tests and sleepless nights!"
+  }
+]

@@ -1,0 +1,47 @@
+.intro__content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  color: $white;
+
+  @include tablets {
+    flex-direction: column;
+    top: 40%;
+  }
+
+  &-desc {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .7;
+    margin-right: 50px;
+    padding-top: 5px;
+
+    @include tablets {
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+
+  &-name {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: .8;
+
+    @include tablets {
+      text-align: center;
+      line-height: 1;
+      margin-top: 20px;
+    }
+
+    @include phones {
+      font-size: 48px;
+    }
+  }
+
+  &-admin {
+    color: $orange;
+  }
+}

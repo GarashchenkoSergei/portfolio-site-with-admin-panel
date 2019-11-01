@@ -1,0 +1,17 @@
+{
+  "text-color": "#414c63",
+  "links-color": "#4b6fd7",
+  "grey": "#2d3c4e",
+  "blue": "#4b6fd7",
+  "orange": "#ff9a00",
+  "black": "#1b1f22",
+  "white": "#f2f1f1",
+  "bp-desktop-hd": "1800px",
+  "ipad-pro": "1366px",
+  "bp-desktop": "1200px",
+  "bp-tablets": "1024px",
+  "bp-tabletsVert": "768px",
+  "bp-bigphones": "650px",
+  "bp-phones": "480px",
+  "bp-smallphones": "350px"
+}

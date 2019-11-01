@@ -1,0 +1,27 @@
+section.contact#contact
+  .container
+    .contact-content
+      h3.contact__title Contact me
+      p Demo version. If you really want to contact me: garashchenkosergei@gmail.com
+      form.contact__form(action="")
+        .form__row
+          label.form__block
+            .form__block-title Enter your name
+            .form__block-content
+              .form-content__icon
+                +icon('user', 'form__icon')
+              input.form-content__text(type="text" name="name" placeholder="Dmitriy Kovalchuk")
+          label.form__block
+            .form__block-title Enter your email
+            .form__block-content
+              .form-content__icon
+                +icon('envelope', 'form__icon')
+              input.form-content__text(type="email" name="email" placeholder="loftschool@study.com")
+        .form__row
+          label.form__block.form__block_long
+            .form__block-title Your message
+            .form__block-content
+              .form-content__icon
+                +icon('message', 'form__icon')
+              textarea.form-content__text(name="text") Need your help with site. What are the terms and conditions?
+        button.form__button(type="submit") Send

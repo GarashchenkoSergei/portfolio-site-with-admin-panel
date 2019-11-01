@@ -1,0 +1,150 @@
+.button {
+  padding: 0;
+}
+
+.add-button {
+  color: $white;
+  background-image: linear-gradient(to right, #006aed, #3f35cb);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(90deg, #ec7e00, $orange);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.item-add__button {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.add-button__work {
+  color: $white;
+  background-image: linear-gradient(to right, #006aed, #3f35cb);
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(90deg, #ec7e00, $orange);
+  }
+}
+
+.add-button__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  color: #ffffff;
+  outline: none;
+
+  @include bigphones {
+    flex-direction: row;
+  }
+}
+
+.add-button__content-circle {
+  height: 150px;
+  width: 150px;
+  min-width: 150px;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include bigphones {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    font-size: 36px;
+  }
+}
+
+.add-button__content-text {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+
+  @include bigphones {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+.edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .edit-change__text {
+      color: rgba(65, 76, 99, 1);
+    }
+  }
+}
+
+.edit-change__text {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(65, 76, 99, 0.5);
+  margin-right: 10px;
+}
+
+.button-cancel {
+  color: $blue;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 40px;
+
+  &:hover {
+    color: $orange;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.save {
+  text-transform: uppercase;
+  padding: 20px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #006aed, #3f35cb);
+  border-radius: 30px;
+
+  &:hover {
+    background: linear-gradient(90deg, #ec7e00, $orange);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

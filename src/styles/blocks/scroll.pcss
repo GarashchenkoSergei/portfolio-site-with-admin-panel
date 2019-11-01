@@ -1,0 +1,44 @@
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  color: $white;
+
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+    
+    .scroll__icon{
+      fill: $orange;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.62;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $white;
+
+    &-pic {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
+}

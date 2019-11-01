@@ -1,0 +1,95 @@
+.footer {
+  background: $black;
+}
+
+.footer-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  color: $white;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer-owner {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-owner__year {
+  width: 170px;
+  font-size: 48px;
+  opacity: .3;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.footer-owner__desc-name {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-owner__desc-info {
+  margin-top: 20px;
+  opacity: .3;
+  font-weight: 600;
+}
+
+.footer-information {
+  margin-left: 120px;
+  width: 800px;
+
+  @include tablets {
+    margin-left: 70px;
+  }
+
+  @include phones {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+.footer-information__block {
+  margin-top: 70px;
+  display: flex;
+  font-weight: 600;
+
+  @include tablets {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+}
+
+.footer-information__column {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-information__column_mod {
+  @include tablets {
+    margin-top: 50px;
+  }
+}
+
+.information__column-text {
+  margin-bottom: 20px;
+  opacity: .3;
+}
+
+.information__right-name {
+  font-style: italic;
+}
+

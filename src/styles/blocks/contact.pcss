@@ -1,0 +1,158 @@
+.contact .container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content {
+  width: 90%;
+  padding: 50px 0 200px 0;
+  position: relative;
+
+  @include tablets {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 90px;
+    background: url(../images/content/leaf-bottom-second.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 0;
+
+    @include bigphones {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 260px;
+    background: url(../images/content/leaf-bottom.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -30px;
+    bottom: 150px;
+    z-index: 0;
+
+    @include tablets {
+      right: -100px;
+      bottom: 135px;
+    }
+
+    @include bigphones {
+      display: none;
+    }
+  }
+}
+
+.contact__title {
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.contact__form {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  z-index: 1;
+
+  @include tablets {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include phones {
+    flex-wrap: wrap;
+  }
+}
+
+.form__block {
+  margin-right: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $white;
+  z-index: 1;
+
+  @include phones {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  &_long {
+    width: 100%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__block-title {
+  font-weight: 700;
+  opacity: .5;
+  padding-left: 40px;
+}
+
+.form__block-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-content__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__icon {
+  width: 30px;
+  fill: $white;
+  opacity: .5;
+  margin-right: 10px;
+}
+
+.form-content__text {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  opacity: 1;
+  color: $white;
+  resize: none;
+  
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.form__button {
+  width: 300px;
+  height: 70px;
+  background: linear-gradient(90deg, #ec7e00, $orange);
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  @include tablets {
+    align-self: center;
+  }
+}

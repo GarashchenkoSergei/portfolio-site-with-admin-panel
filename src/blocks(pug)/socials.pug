@@ -1,0 +1,21 @@
+-
+  var socialItems = [
+    {
+      name: "insta",
+      link: "https://www.instagram.com/garashchenkosergei/?hl=ru"
+    },{
+      name: "fb",
+      link: "https://www.facebook.com/sergey.s.garashchenko"
+    },{
+      name: "github",
+      link: "https://github.com/GarashchenkoSergei"
+    }
+  ]
+
+mixin socials(mod)
+    ul(class = 'socials__list socials__list_' + mod)
+      -for (var i = 0; i < socialItems.length; i++) {
+        li.socials__item 
+          a.socials__link(href=socialItems[i].link)
+            +icon(socialItems[i].name, 'socials__icon')
+      - }

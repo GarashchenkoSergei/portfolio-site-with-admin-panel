@@ -1,0 +1,9 @@
+-var navItems = [{ name: "Main", path: "main" }, { name: "About me", path: "about" }, { name: "Skills", path: "values" }, { name: "My work", path: "work" }, { name: "Feedback", path: "feedback" }, { name: "Contact", path: "contact" }]
+
+mixin nav(mod)
+  nav(class = 'nav nav_' + mod)
+    ul.nav__list
+      -for (var i = 0; i < navItems.length; i++) {
+        li.nav__item
+          a.nav__link(href="" data-path=navItems[i].path)= navItems[i].name
+      - }

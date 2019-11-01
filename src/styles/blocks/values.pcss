@@ -1,0 +1,53 @@
+.values {
+  background: url('../images/content/skills-bg.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $white;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 390px;
+    height: 680px;
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    background: url('../images/content/hands.png') center center no-repeat;
+    background-size: contain;
+
+    @include tablets {
+      background: url('../images/content/hands2.png') center center no-repeat;
+      background-size: contain;
+      width: 490px;
+      height: 340px;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+    }
+
+    @include bigphones {
+      width: 340px;
+      height: 230px;
+    }
+  }
+}
+
+.values-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @include tablets {
+    padding-top: 60px;
+    padding-bottom: 320px;
+  }
+
+  @include bigphones {
+    padding-bottom: 220px;
+  }
+}
